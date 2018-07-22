@@ -1,6 +1,6 @@
 from classes.cRandom import cWRandom
 from classes.cWorld import cWorld
-"""THis now gets into git"""
+"""This now gets into git"""
 
 
 def main():
