@@ -21,7 +21,7 @@ class cWRandom:
         return
 
     def iTerrainSeed(self, iTSeed, count):
-        print("terrainSeed "+str(count)+": " +
+        print("terrainSeed " + str(count) + ": " +
               str(random.randrange(1, iTSeed, 1)))
         return
 
