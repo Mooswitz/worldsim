@@ -4,19 +4,19 @@
 class cAtom(object):
     def iElectrons(self, iECount):
         if iECount <= 0:
-            return
+            return 0
         else:
             return iECount
 
     def iProtons(self, iPCount):
         if iPCount <= 0:
-            return
+            return 0
         else:
             return iPCount
 
     def iNeutrons(self, iNCount):
         if iNCount <= 0:
-            return
+            return 0
         else:
             return iNCount
 
@@ -107,5 +107,22 @@ class cAtom(object):
         if iPCount == 24:
             if iECount == 24:
                 strAtomName = "Chromium"
+        if iPCount == 25:
+            if iECount == 25:
+                strAtomName = "Manganum"
+        if iPCount == 26:
+            if iECount == 26:
+                strAtomName = "Ferrum"
+        if iPCount == 27:
+            if iECount == 27:
+                strAtomName = "Cobaltum"
+        if iPCount == 28:
+            if iECount == 28:
+                strAtomName = "Niccolum"
 
         return strAtomName
+
+    def getAtom(self):
+
+        Atom = {}
+        return Atom[1]

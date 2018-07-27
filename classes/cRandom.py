@@ -1,7 +1,7 @@
 import random
 
 
-class cWRandom:
+class cWRandom(object):
     def randomnessSeeder(self):
         # obj_list = []
         # for i in range(10):

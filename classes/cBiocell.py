@@ -1,8 +1,9 @@
 """This Class defines the behavior of a biological Cell"""
 
 
-class cBioCell:
+class cBioCell(object):
     def BioCellCore(self):
+
         return
 
     def BioCellMembrane(self):
