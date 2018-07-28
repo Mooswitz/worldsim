@@ -4,6 +4,8 @@ oAtom = cAtom()
 
 
 class cMolecule(object):
+    """This Class exists to define existing molecules."""
+
     def mH2O(self, intH, intO, intH2O):
         if (intH == 2 and intO == 1):
             intH2O += 1
