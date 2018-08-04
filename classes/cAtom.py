@@ -24,6 +24,7 @@ class cAtom(object):
         """Defines which Atom it can be, based on Electron count,
         Protoncount and Neutroncount. Neutroncount atm not implemented.
         """
+        strAtomName = "NO_ATOM"
 
         if iPCount == 1:
             if iECount == 0:
@@ -119,6 +120,8 @@ class cAtom(object):
         if iPCount == 28:
             if iECount == 28:
                 strAtomName = "Niccolum"
+        else:
+            strAtomName = "NO_ATOM"
 
         return strAtomName
 
