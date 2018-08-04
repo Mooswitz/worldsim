@@ -11,9 +11,10 @@ def main():
     obj_earth.fContinents(7)
 
     obj_random = cWRandom()
-    obj_random.randomnessSeeder()
 
     while 1:  # mainloop
+        obj_random.iAtomSeed()
+
         break
 
     return
