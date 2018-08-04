@@ -14,14 +14,20 @@ def main():
 
     obj_random = cWRandom()
 
-    while 1:  # mainloop
-        iElectron = objAtom.iElectrons(obj_random.iAtomSeed())
-        iProton = objAtom.iProtons(obj_random.iAtomSeed())
-        iNeutron = objAtom.iNeutrons(obj_random.iAtomSeed())
-        strAtom = objAtom.strWhichAtom(iElectron, iProton, iNeutron)
+    try:
+        while 1:  # mainloop
+            RandomNumber = obj_random.iAtomSeed()
+            print RandomNumber
+            iElectron = RandomNumber
+            iProton = RandomNumber
+            iNeutron = RandomNumber
+            strAtom = objAtom.strWhichAtom(iElectron, iProton, iNeutron)
 
-        if strAtom != "NO_ATOM":
-            print "Atom: " + strAtom
+            if strAtom != "NO_ATOM":
+                print "Atom: " + strAtom
+
+    except KeyboardInterrupt:
+        pass
 
     return
 
