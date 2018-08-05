@@ -17,14 +17,15 @@ def main():
     try:
         while 1:  # mainloop
             RandomNumber = obj_random.iAtomSeed()
-            print RandomNumber
+            RandomNumber1 = obj_random.iAtomSeed()
+            RandomNumber2 = obj_random.iAtomSeed()
             iElectron = RandomNumber
-            iProton = RandomNumber
-            iNeutron = RandomNumber
+            iProton = RandomNumber1
+            iNeutron = RandomNumber2
             strAtom = objAtom.strWhichAtom(iElectron, iProton, iNeutron)
 
             if strAtom != "NO_ATOM":
-                print "Atom: " + strAtom
+                print("Atom: "), strAtom, ("\r\n")
 
     except KeyboardInterrupt:
         pass

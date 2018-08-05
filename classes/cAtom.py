@@ -2,6 +2,9 @@
 
 
 class cAtom(object):
+
+    dictAtom = {}
+
     def iElectrons(self, iECount):
         if iECount <= 0:
             return 0
@@ -169,12 +172,13 @@ class cAtom(object):
             else:
                 strAtomName = "NO_ATOM"
 
-        else:
-            strAtomName = "NO_ATOM"
+        return self.countAtom(strAtomName, self.dictAtom)
 
-        return strAtomName
+    def countAtom(self, strAtomName, dictAtom):
 
-    def getAtom(self):
+        if strAtomName not in dictAtom and strAtomName != "NO_ATOM":
+            dictAtom[strAtomName] = 1
+        elif strAtomName != "NO_ATOM":
+            dictAtom[strAtomName] += 1
 
-        Atom = {}
-        return Atom[1]
+        return dictAtom
