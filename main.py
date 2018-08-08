@@ -1,10 +1,15 @@
+# Copyright 2018 by Moritz Will
+# Everyone is allowed to copy this code and to make his own changes.
+# Nobody is allowed to share this work on other places. You are
+# also not allowed to claim this work as your own, as long as you 
+# use parts of my code.
+# This counts for every file in this repository!
+
 from classes.cRandom import cWRandom
 from classes.cWorld import cWorld
 """This project is work-in-progess and will run
 a very long time in development.
-However... Ideas appreciated!
-I will not explain too much to this project,
-because I want to Identify myself with this simulation."""
+"""
 
 
 def main():
