@@ -3,6 +3,7 @@
 # Nobody is allowed to share this work on other places. You are
 # also not allowed to claim this work as your own, as long as you 
 # use parts of my code.
+# This counts for every file in this repository!
 
 from classes.cAtom import cAtom
 from classes.cRandom import cWRandom
