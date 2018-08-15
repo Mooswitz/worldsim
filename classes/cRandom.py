@@ -22,7 +22,7 @@ class cWRandom(object):
 
     def iAtomSeed(self):
         random.seed = self.randomnessSeeder()
-        iASeed = random.randrange(1, 28, 1)
+        iASeed = random.randrange(1, 118, 1)
         return iASeed
 
     def iBioCellSeed(self, iBCSeed):
